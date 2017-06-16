@@ -54,10 +54,12 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         @if(Auth::check())
-                            <li><a href="{{ url('/home') }}">Dashboard</a></li>
-                            <li><a href="{{ route('authors.index') }}">penulis</a></li>
-                        @endif
-                    </ul>
+                            <li><a href="{{  url('/home') }}">Dashboard</a></li>
+                               @endif
+                            @role('admin')
+                            <li><a href="{{ route('authors.index') }}">Penulis</a></li>
+                            @endrole
+                        </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
@@ -90,7 +92,7 @@
                 </div>
             </div>
         </nav>
-
+         
         @yield('content')
     </div>
 

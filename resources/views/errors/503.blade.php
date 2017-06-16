@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Be right back.</title>
+        <title>no access</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet" type="text/css">
 
         <style>
             html, body {
@@ -40,7 +40,9 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Be right back.</div>
+                <div class="title">:(</div>
+                <p>maaf, anda tidak memiliki akses untuk fitur ini</p>
+                <p><a href="{{ url('/')}}">kembali ke halaman awal</a></p>
             </div>
         </div>
     </body>

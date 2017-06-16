@@ -21,6 +21,8 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('/my', 'sucicontroller@index');
 
-Route::group(['prefix'=>'admin', 'middleware'=>['auth']], function () {
-Route::resource('authors', 'AuthorsController');
+Route::group(['prefix'=>'admin', 'middleware'=>['auth', 'role:admin']], function () {
+
+   Route::resource('authors', 'AuthorsController');
 	});
+
